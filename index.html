@@ -6,6 +6,24 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<style type="text/css">
+		/* Surcharge bootstrap */
+	  	.list-group-item {
+	      	padding:2px 10px; 
+	      	border:0px solid;
+	  	}
+
+	  	.panel-body {
+	  		padding: 8px;
+	  	}
+
+		.list-group {
+			padding-left: 0px;
+			margin-bottom: 2px;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -22,11 +40,62 @@
 	<div class="container">
 		<div class="row">
 			<!-- Menu -->
-			<div class="col-md-1">
-				Menu
+			<div class="col-md-2">
+				<div class="panel-group" id="accordion">
+					<!-- 2008 -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+					    	<h3 class="panel-title">
+					    		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2008">2008</a>
+					    	</h3>
+					  	</div>
+					  	<div id="collapse2008" class="panel-collapse collapse">
+						  	<div class="panel-body">
+						    	<a href="/paques2008/olivierM/">Paques</a><br/>
+						    	Les mules :
+								<ul class="list-group">
+								  	<li class="list-group-item"><a href="/mule2008/jacques">Par Jacques</a></li>
+								  	<li class="list-group-item"><a href="/mule2008/jeanpierre">Par Jean Pierre</li>
+								  	<li class="list-group-item"><a href="/mule2008/pol">par Pol</li>
+								  	<li class="list-group-item"><a href="/mule2008/olivierM">Par Olivier M.</li>
+								</ul>
+						    	<a href="/char2008/jeanpierre/">Char à voile</a>
+						  	</div>
+						</div>
+					</div>
+					
+					<!-- 2009 -->
+					<div class="panel panel-default">
+					  	<div class="panel-heading">
+					    	<h3 class="panel-title">
+					    		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2009">2009</a>
+					    	</h3>
+					  	</div>
+					  	<div id="collapse2009" class="panel-collapse collapse in">
+						  	<div class="panel-body">
+						    	Panel content 2009
+						  	</div>
+						</div>
+					</div>
+
+					<!-- 2010 -->
+					<div class="panel panel-default">
+					  	<div class="panel-heading">
+					    	<h3 class="panel-title">
+					    		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2010">2010</a>
+					    	</h3>
+					  	</div>
+					  	<div id="collapse2010	" class="panel-collapse collapse in">
+						  	<div class="panel-body">
+						    	Panel content 2010
+						  	</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="col-md-11">
+
+			<div class="col-md-10">
 				<!-- Presentation -->
 				<div class="jumbotron">
 					<div class="container">
