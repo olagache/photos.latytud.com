@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="latytudPhotoApp" data-ng-strict-di>
 <head>
 	<title>Site de photos de l'association L'a ty tud</title>
 	<meta charset="utf-8">
@@ -11,7 +11,7 @@
 	<style type="text/css">
 	/* Surcharge bootstrap */
 	.list-group-item {
-		padding:2px 10px; 
+		padding:2px 10px;
 		border:0px solid;
 	}
 
@@ -23,13 +23,12 @@
 		padding-left: 0px;
 		margin-bottom: 2px;
 	}
-
 	</style>
 </head>
 
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-static-top navbar-inverse" role="navigation"> 
+	<nav class="navbar navbar-static-top navbar-inverse" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">Photos</a>
@@ -64,7 +63,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<!-- 2009 -->
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -209,8 +208,9 @@
 			</div>
 		</div> <!-- /row -->
 	</div><!-- /container -->
-	<!-- jQuery and bootstrap js -->
+	<!-- jQuery, bootstrap and Angular -->
 	<script src="js/jquery-2.0.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular-1.4.2.min.js"></script>
 </body>
 </html>
