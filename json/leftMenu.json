@@ -1,0 +1,195 @@
+{
+  "leftMenu":[
+    {
+      "title":"2008",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"/paques2008/olivierM/",
+          "links" : []
+        },
+        {
+          "title":"Les mules",
+          "link":"",
+          "links":[
+            {
+              "by":"Jacques",
+              "link":"/mules2008/jacques"
+            },
+            {
+              "by":"Jean Pierre",
+              "link":"/mules2008/jeanpierre"
+            },
+            {
+              "by":"Pol",
+              "link":"/mules2008/pol"
+            },
+            {
+              "by":"olivier M",
+              "link":"/mules2008/olivierM"
+            }
+          ]
+        },
+        {
+          "title":"Char à voile",
+          "link":"/char2008/jeanpierre/",
+          "links" : []
+        }
+      ]
+    },
+    {
+      "title":"2009",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"",
+          "links":[
+            {
+              "by":"Olivier M",
+              "link":"/paques2009/olivierM"
+            },
+            {
+              "by":"Pol G",
+              "link":"/paques2009/polG"
+            }
+          ]
+        },
+        {
+          "title":"Les mules",
+          "link":"",
+          "links":[
+            {
+              "by":"Jean Pierre R",
+              "link":"/mules2009/jeanPierreR"
+            },
+            {
+              "by":"Olivier L",
+              "link":"/mules2009/olivierL"
+            },
+            {
+              "by":"Pol G",
+              "link":"/mules2009/polG"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title":"2010",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"",
+          "links":[
+            {
+              "by":"Olivier M",
+              "link":"/paques2010/olivierM"
+            },
+            {
+              "by":"Olivier L",
+              "link":"/paques2010/olivierL"
+            },
+            {
+              "by":"Pol G",
+              "link":"/paques2010/polG"
+            }
+          ]
+        },
+        {
+          "title":"Les mules",
+          "link":"",
+          "links":[
+            {
+              "by":"Olivier M",
+              "link":"/mules2010/olivierM"
+            },
+            {
+              "by":"Olivier L",
+              "link":"/mules2010/olivierL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title":"2011",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"/paques2011/",
+          "links" : []
+        }
+      ]
+    },
+    {
+      "title":"2012",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"/paques2012/",
+          "links" : []
+        },
+        {
+          "title":"Les mules",
+          "link":"/mules2012/",
+          "links" : []
+        }
+      ]
+    },
+    {
+      "title":"2013",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"/paques2013/",
+          "links" : []
+        },
+        {
+          "title":"Les mules",
+          "link":"/mules2013/",
+          "links" : []
+        },
+        {
+          "title":"Char à voile",
+          "link":"/char2013/",
+          "links" : []
+        }
+      ]
+    },
+    {
+      "title":"2014",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"/paques2014/",
+          "links" : []
+        },
+        {
+          "title":"Les mules",
+          "link":"/mules2014/",
+          "links" : []
+        },
+        {
+          "title":"Char à voile",
+          "link":"/char2014/",
+          "links" : []
+        }
+      ]
+    },
+    {
+      "title":"2015",
+      "subMenu":[
+        {
+          "title":"Paques",
+          "link":"/paques2015/",
+          "links" : []
+        },
+        {
+          "title":"Les mules",
+          "link":"/mules2015/",
+          "links" : []
+        }
+      ]
+    }
+  ]
+}
