@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/vendors/bootstrap.min.css" rel="stylesheet" media="screen">
 
 	<style type="text/css">
 	/* Surcharge bootstrap */
@@ -41,7 +41,7 @@
 		<div class="row">
 			<!-- Menu (Left column) -->
 			<div class="col-md-2">
-				<div class="panel-group" id="accordion">
+				<div class="panel-group" id="accordion" data-ng-controller="LeftMenuController as leftMenuCtrl">
 					<!-- 2008 -->
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -173,19 +173,18 @@
 						</div>
 					</div>
 					<!-- 2015 -->
-                                       <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                        <h3 class="panel-title">
-                                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2015">2015</a>
-                                                        </h3>
-                                                </div>
-                                                <div id="collapse2015" class="panel-collapse collapse in">
-                                                        <div class="panel-body">
-                                                                <a href="/paques2015/">Paques</a><br>
-                                                        </div>
-                                                </div>
-                                        </div>
-
+					<div class="panel panel-default">
+					        <div class="panel-heading">
+					                <h3 class="panel-title">
+					                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2015">2015</a>
+					                </h3>
+					        </div>
+					        <div id="collapse2015" class="panel-collapse collapse in">
+					                <div class="panel-body">
+					                        <a href="/paques2015/">Paques</a><br>
+					                </div>
+					        </div>
+					</div>
 				</div>
 			</div>
 
@@ -209,8 +208,9 @@
 		</div> <!-- /row -->
 	</div><!-- /container -->
 	<!-- jQuery, bootstrap and Angular -->
-	<script src="js/jquery-2.0.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/angular-1.4.2.min.js"></script>
+	<script src="js/vendors/jquery-2.0.3.min.js"></script>
+	<script src="js/vendors/bootstrap.min.js"></script>
+	<script src="js/vendors/angular-1.4.2.min.js"></script>
+	<script src="js/latytud.js"></script>
 </body>
 </html>

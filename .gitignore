@@ -1,0 +1,5 @@
+# gulp
+node_modules/
+
+# gulp files generation
+js/latytud*.js
