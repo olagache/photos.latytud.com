@@ -46,10 +46,10 @@
 					<div class="panel panel-default" data-ng-repeat="menu in leftMenu">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{menu.title}}-1">{{menu.title}}</a>
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{menu.title}}">{{menu.title}}</a>
 							</h3>
 						</div>
-						<div id="collapse{{menu.title}}-1" class="panel-collapse collapse">
+						<div id="collapse{{menu.title}}" class="panel-collapse collapse">
 							<div class="panel-body">
 								<div data-ng-repeat="subMenu in menu.subMenu">
 									<a href="{{subMenu.link}}" data-ng-if="subMenu.link">{{subMenu.title}}</a>

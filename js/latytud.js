@@ -23,7 +23,7 @@ angular.module("latytudPhotoApp").controller("LeftMenuController", ["$scope", "l
 angular.module("latytudPhotoApp").factory("latytudService", ["$http", function($http) {
     return {
       fetchLeftMenu : function() {
-        return $http.get('/json/leftMenu.json')
+        return $http.get('json/leftMenu.json')
       }
     }
 }])
