@@ -42,153 +42,26 @@
 			<!-- Menu (Left column) -->
 			<div class="col-md-2">
 				<!-- angular menu -->
-				<div class="panel-group" id="accordion" data-ng-controller="LeftMenuController">
-				</div>
-
-				<!-- static menu -->
-				<div class="panel-group" id="accordion">
-					<!-- 2008 -->
-					<div class="panel panel-default">
+				<div class="panel-group" id="accordion" data-ng-controller="LeftMenuController as leftMenuCtrl">
+					<div class="panel panel-default" data-ng-repeat="menu in leftMenu">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2008">2008</a>
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{menu.title}}-1">{{menu.title}}</a>
 							</h3>
 						</div>
-						<div id="collapse2008" class="panel-collapse collapse">
+						<div id="collapse{{menu.title}}-1" class="panel-collapse collapse">
 							<div class="panel-body">
-								<a href="/paques2008/olivierM/">Paques</a><br/>
-								Les mules :
-								<ul class="list-group">
-									<li class="list-group-item"><a href="/mules2008/jacques">Par Jacques</a></li>
-									<li class="list-group-item"><a href="/mules2008/jeanpierre">Par Jean Pierre</a></li>
-									<li class="list-group-item"><a href="/mules2008/pol">par Pol</a></li>
-									<li class="list-group-item"><a href="/mules2008/olivierM">Par Olivier M.</a></li>
-								</ul>
-								<a href="/char2008/jeanpierre/">Char à voile</a>
+								<div data-ng-repeat="subMenu in menu.subMenu">
+									<a href="{{subMenu.link}}" data-ng-if="subMenu.link">{{subMenu.title}}</a>
+									<div data-ng-if="!subMenu.link">
+										{{subMenu.title}} :
+										<ul class="list-group" data-ng-if="subMenu.links">
+											<li class="list-group-item" data-ng-repeat="link in subMenu.links"><a href="{{link.link}}">Par {{link.by}}</a></li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<!-- 2009 -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2009">2009</a>
-							</h3>
-						</div>
-						<div id="collapse2009" class="panel-collapse collapse">
-							<div class="panel-body">
-								Paques :
-								<ul class="list-group">
-									<li class="list-group-item"><a href="/paques2009/olivierM">Par Olivier M.</a></li>
-									<li class="list-group-item"><a href="/paques2009/polG">Par Pol G.</a></li>
-								</ul>
-								Les mules :
-								<ul class="list-group">
-									<li class="list-group-item"><a href="/mules2009/jeanPierreR">Par Jean Pierre R.</a></li>
-									<li class="list-group-item"><a href="/mules2009/olivierL">Par Olivier L.</a></li>
-									<li class="list-group-item"><a href="/mules2009/polG">par Pol G</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<!-- 2010 -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2010">2010</a>
-							</h3>
-						</div>
-						<div id="collapse2010" class="panel-collapse collapse">
-							<div class="panel-body">
-								Paques :
-								<ul class="list-group">
-									<li class="list-group-item"><a href="/paques2010/olivierM">Par Olivier M.</a></li>
-									<li class="list-group-item"><a href="/paques2010/olivierL">Par Olivier L.</a></li>
-									<li class="list-group-item"><a href="/paques2010/polG">Par Pol G.</a></li>
-								</ul>
-								Les mules :
-								<ul class="list-group">
-									<li class="list-group-item"><a href="/mules2010/olivierM">Par Olivier M.</a></li>
-									<li class="list-group-item"><a href="/mules2010/olivierL">Par Olivier L.</a></li>
-								</ul>
-								<a href="/char2010/">Char à voile</a>
-							</div>
-						</div>
-					</div>
-
-					<!-- 2011 -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2011">2011</a>
-							</h3>
-						</div>
-						<div id="collapse2011" class="panel-collapse collapse">
-							<div class="panel-body">
-								<a href="/paques2011/">Paques</a>
-							</div>
-						</div>
-					</div>
-					<!-- 2012 -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2012">2012</a>
-							</h3>
-						</div>
-						<div id="collapse2012" class="panel-collapse collapse">
-							<div class="panel-body">
-								<a href="/paques2012/">Paques</a><br>
-								<a href="/mules2012/">Les mules</a>
-							</div>
-						</div>
-					</div>
-
-					<!-- 2013 -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2013">2013</a>
-							</h3>
-						</div>
-						<div id="collapse2013" class="panel-collapse collapse">
-							<div class="panel-body">
-								<a href="/paques2013/">Paques</a><br>
-								<a href="/mules2013/">Les mules</a><br>
-								<a href="/char2013/">Char à voile</a>
-							</div>
-						</div>
-					</div>
-
-					<!-- 2014 -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2014">2014</a>
-							</h3>
-						</div>
-						<div id="collapse2014" class="panel-collapse collapse">
-							<div class="panel-body">
-								<a href="/paques2014/">Paques</a><br>
-								<a href="/mules2014/">Les mules</a><br>
-								<a href="/char2014/">Char à voile</a>
-							</div>
-						</div>
-					</div>
-					<!-- 2015 -->
-					<div class="panel panel-default">
-					        <div class="panel-heading">
-					                <h3 class="panel-title">
-					                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2015">2015</a>
-					                </h3>
-					        </div>
-					        <div id="collapse2015" class="panel-collapse collapse in">
-					                <div class="panel-body">
-					                        <a href="/paques2015/">Paques</a><br>
-					                </div>
-					        </div>
 					</div>
 				</div>
 			</div>
