@@ -38,11 +38,11 @@
 
 
 	<div class="container">
-		<div class="row">
+		<div class="row" data-ng-controller="LeftMenuController as leftMenuCtrl">
 			<!-- Menu (Left column) -->
 			<div class="col-md-2">
 				<!-- angular menu -->
-				<div class="panel-group" id="accordion" data-ng-controller="LeftMenuController as leftMenuCtrl">
+				<div class="panel-group" id="accordion">
 					<div class="panel panel-default" data-ng-repeat="menu in leftMenu">
 						<div class="panel-heading">
 							<h3 class="panel-title">
@@ -77,7 +77,7 @@
 								<h1 class="media-heading">L'A TY TUD iens !</h1>
 								<p>Retrouve ici les bons moments passez ensemble ;)</p>
 								<p>&nbsp;</p>
-								<p><a class="btn btn-primary btn-lg" href="/paques2015/">Les dernières photos</a></p>
+								<p><a class="btn btn-primary btn-lg" href="{{activeMenu.link}}">Les dernières photos {{activeMenu.title}}</a></p>
 							</div>
 						</div>
 					</div>
