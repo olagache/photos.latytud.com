@@ -49,7 +49,7 @@
 								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{menu.title}}">{{menu.title}}</a>
 							</h3>
 						</div>
-						<div id="collapse{{menu.title}}" class="panel-collapse collapse">
+						<div id="collapse{{menu.title}}" data-ng-class="$last ? 'panel-collapse collapse in' : 'panel-collapse collapse'">
 							<div class="panel-body">
 								<div data-ng-repeat="subMenu in menu.subMenu">
 									<a href="{{subMenu.link}}" data-ng-if="subMenu.link">{{subMenu.title}}</a>

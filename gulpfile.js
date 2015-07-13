@@ -9,15 +9,15 @@ gulp.task('clean', function (cb) {
   del(['js/latytud.js', 'js/latytud.min.js'], cb);
 });
 
-gulp.task('js', function () {
-  gulp.src(['src/latytudModule.js', 'src/*.js'])
+gulp.task('js', ['clean'], function () {
+  return gulp.src(['src/latytudModule.js', 'src/*.js'])
     .pipe(concat('latytud.js'))
     .pipe(ngAnnotate())
     .pipe(gulp.dest('js/'))
 });
 
 gulp.task('compress', ['js'], function () {
-  gulp.src('js/latytud.js')
+  return gulp.src('js/latytud.js')
     .pipe(concat('latytud.min.js'))
     .pipe(ngAnnotate())
     .pipe(uglify())
@@ -26,8 +26,8 @@ gulp.task('compress', ['js'], function () {
 
 /* ============================================== */
 /* ============================================== */
-gulp.task('watch', ['js'], function () {
-  gulp.watch('src/**/*.js', ['compress'])
+gulp.task('watch', ['compress'], function () {
+  gulp.watch(['src/**/*.js', 'index.html'], ['compress'])
 });
 
 /* ============================================== */
@@ -54,5 +54,5 @@ gulp.task('launchWebServer', ['webServerConnect', 'watchWebServer']);
 
 /* ============================================== */
 /* ============================================== */
-gulp.task('default', ['clean', 'js', 'compress'], function () {
+gulp.task('default', ['compress'], function () {
 });
