@@ -4,16 +4,17 @@ var del = require('del');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 var connect = require('gulp-connect');
+var runSequence = require('run-sequence');
 
 gulp.task('clean', function (cb) {
   del(['js/latytud.js', 'js/latytud.min.js'], cb);
 });
 
-gulp.task('js', ['clean'], function () {
+gulp.task('js', function () {
   return gulp.src(['src/latytudModule.js', 'src/*.js'])
     .pipe(concat('latytud.js'))
     .pipe(ngAnnotate())
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest('js/'));
 });
 
 gulp.task('compress', ['js'], function () {
@@ -21,7 +22,11 @@ gulp.task('compress', ['js'], function () {
     .pipe(concat('latytud.min.js'))
     .pipe(ngAnnotate())
     .pipe(uglify())
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest('js/'));
+});
+
+gulp.task('build', function(cb){
+  runSequence('clean', 'compress', cb);
 });
 
 /* ============================================== */

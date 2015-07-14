@@ -43,7 +43,10 @@
 			<div class="col-md-2">
 				<!-- angular menu -->
 				<div class="panel-group" id="accordion">
-					<div class="panel panel-default" data-ng-repeat="menu in leftMenu">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Filtre du menu" data-ng-model="query">
+					</div>
+					<div class="panel panel-default" data-ng-repeat="menu in leftMenu | filter:query">
 						<div class="panel-heading">
 							<h3 class="panel-title">
 								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{menu.title}}">{{menu.title}}</a>

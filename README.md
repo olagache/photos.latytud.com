@@ -18,6 +18,7 @@ Le menu étant de plus en plus long, on en profite pour le rendre dynamique en u
     - ```$ npm install --save-dev gulp-ng-annotate```
     - ```$ npm install --save-dev gulp-debug```
     - ```$ npm install --save-dev gulp-connect```
+    - ```$ npm install --save-dev run-sequence```
 
 # Utilisation
 Le fichier gulpfile.js permet de récupérer tous les fichiers javascript d'AngularJS contenus dans le répertoire src/\* de les concatener, transformer, ... et de 'pousser' le résultat dans **js/latytud.js** et **js/latytud.min.js**
