@@ -42,7 +42,7 @@
 			<!-- Menu (Left column) -->
 			<div class="col-md-2">
 				<!-- angular menu -->
-				<div class="panel-group" id="accordion">
+				<div class="panel-group" id="accordion" data-ng-cloak>
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Filtre du menu" data-ng-model="query">
 					</div>
@@ -80,7 +80,7 @@
 								<h1 class="media-heading">L'A TY TUD iens !</h1>
 								<p>Retrouve ici les bons moments passez ensemble ;)</p>
 								<p>&nbsp;</p>
-								<p><a class="btn btn-primary btn-lg" href="{{activeMenu.link}}">Les dernières photos {{activeMenu.title}}</a></p>
+								<p data-ng-cloak><a class="btn btn-primary btn-lg" href="{{activeMenu.link}}">Les dernières photos {{activeMenu.title}}</a></p>
 							</div>
 						</div>
 					</div>
