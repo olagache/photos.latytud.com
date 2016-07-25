@@ -193,6 +193,11 @@
           "title":"Les mules",
           "link":"/mules2015/",
           "links" : []
+        },
+        {
+          "title":"Char à voile",
+          "link":"/char2015/",
+          "links" : []
         }
       ]
     },
@@ -202,6 +207,11 @@
         {
           "title":"Paques",
           "link":"/paques2016/",
+          "links" : []
+        },
+        {
+          "title":"Les mules",
+          "link":"/mules2016/",
           "links" : []
         }
       ]
