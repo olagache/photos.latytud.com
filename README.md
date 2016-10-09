@@ -13,7 +13,7 @@ Le menu étant de plus en plus long, on en profite pour le rendre dynamique en u
   - ```$ sudo npm install --global gulp```
   - Dans le répertoire du projet:
     - ```$ npm install --save-dev gulp gulp-concat```
-    - ```$ npm install --save-de gulp-uglify```
+    - ```$ npm install --save-dev gulp-uglify```
     - ```$ npm install --save-dev del```
     - ```$ npm install --save-dev gulp-ng-annotate```
     - ```$ npm install --save-dev gulp-debug```
