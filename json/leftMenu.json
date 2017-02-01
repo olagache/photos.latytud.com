@@ -213,9 +213,14 @@
           "title":"Les mules",
           "link":"/mules2016/",
           "links" : []
+        },
+        {
+          "title":"Char à voile",
+          "link":"/char2016/",
+          "links" : []
         }
       ]
     }
   ],
-  "activeMenu": {"title" : "2016", "link":"/mules2016/"}
+  "activeMenu": {"title" : "2016", "link":"/char2016/"}
 }
