@@ -220,6 +220,16 @@
           "links" : []
         }
       ]
+    },
+    {
+      "title":"2017",
+      "subMenu":[
+        {
+          "title":"Les mules",
+          "link":"/mules2017/",
+          "links" : []
+        }
+      ]
     }
   ],
   "activeMenu": {"title" : "2016", "link":"/char2016/"}
