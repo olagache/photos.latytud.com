@@ -230,7 +230,22 @@
           "links" : []
         }
       ]
+    },
+    {
+      "title" : "2018",
+      "subMenu": [
+        {
+          "title": "Paques",
+          "link": "/2018/paques/",
+          "links": []
+        },
+        {
+          "title": "Les mules",
+          "link": "/2018/mules/",
+          "links": []
+        }
+      ]
     }
   ],
-  "activeMenu": {"title" : "2017", "link":"/mules2017/"}
+  "activeMenu": {"title" : "2018", "link":"/2018/mules/"}
 }
