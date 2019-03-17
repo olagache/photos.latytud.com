@@ -206,17 +206,17 @@
       "subMenu":[
         {
           "title":"Paques",
-          "link":"/paques2016/",
+          "link":"/2016/paques/",
           "links" : []
         },
         {
           "title":"Les mules",
-          "link":"/mules2016/",
+          "link":"/2016/mules/",
           "links" : []
         },
         {
           "title":"Char à voile",
-          "link":"/char2016/",
+          "link":"/2016/charAVoile/",
           "links" : []
         }
       ]
@@ -226,7 +226,7 @@
       "subMenu":[
         {
           "title":"Les mules",
-          "link":"/mules2017/",
+          "link":"/2017/mules/",
           "links" : []
         }
       ]
